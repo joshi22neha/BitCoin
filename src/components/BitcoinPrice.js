@@ -30,7 +30,7 @@ const BitcoinPrice = ({ selected, setSelected, options }) => {
         onSelectChange={setSelected}
         options={options}
       />
-      <p style={{ fontSize: "36px" }}>{result + " " + selected.label}</p>
+      <p style={{ marginTop: "60px" , fontSize: "36px" }}>{result + " " + selected.label}</p>
     </div>
   );
 };

@@ -3,7 +3,6 @@ import { Line } from "react-chartjs-2";
 import axios from "axios";
 
 const ChartDetails = ({ selected }) => {
-  const [loading, setLoading] = useState(true);
   const [chartResult, setChartResult] = useState([]);
   const [chartData, setChartData] = useState(null);
   const [seriesData, setSeriesData] = useState(null);
@@ -25,8 +24,6 @@ const ChartDetails = ({ selected }) => {
       const series = Object.values(chartResult);
       setChartData(categories);
       setSeriesData(series);
-      setLoading(false);
-      console.log(chartResult);
     };
     chart();
   }, [selected]);
